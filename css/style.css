@@ -1,39 +1,111 @@
-h3 {
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   width: 100%;
+   text-align: center;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+   background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 2px;
+   background-color: white;
+   max-height: 0;
+   overflow: hidden;
+   margin: 0px;
+   transition: max-height 0.5s ease-out;
+}
+/**********************************
+        General style
+***********************************/
+.sectionsTitle {
+  margin-top: 0px;
+}
+.paragraphstyle {
   text-align: center;
 }
 
+
+/**********************************
+        Header Details style
+***********************************/
 #main {
     width: 100%;
     height: 100px;
     background-color: beige;
+    display: table;
+    padding: 10px;
 }
 
-.data {
-    background-color: red;
+#headername {
+  text-shadow: 2px 2px 4px gray;
+  text-align: center;
+  padding: 15px;
+  font-size: 55px;
 }
 
 .personalPhoto {
-    width: 200px;
-    height: 240px;
-    position: absolute;
+    width: 250px;
+    height: 250px;
+    display: table;
+    box-shadow: 3px 3px 5px gray;
     float: right;
 }
 
+/**********************************
+        Introduction
+***********************************/
 #introduction {
     width: 100%;
-    height: 100px;
+    display: table;
     background-color: aqua;
 }
-
+.introParahraph {
+  font-size: 16px;
+  margin: 15px;
+}
+/**********************************
+          Experience
+***********************************/
 #experience {
     width: 100%;
     height: 100px;
+    display: table;
     background-color: bisque;
 }
-
+.experienceSections {
+  margin: 15px;
+}
+.experienceLogo {
+  width: 150px;
+  height: 25px;
+  margin: 10px 10px 10px 0px;
+}
+.experienceLogoPegas {
+  width: 140px;
+  height: 50px;
+  margin: 10px 10px 10px 0px;
+}
+.experienceLogoCosco {
+  width: 100px;
+  height: 50px;
+  margin: 10px 10px 10px 5px;
+}
+#experience h3 {
+  margin-top: 10px;
+}
 #courses {
     width: 100%;
     height: 100px;
+    display: table;
     background-color: rosybrown;
 
 }
@@ -41,6 +113,7 @@ h3 {
 #certifications {
     width: 100%;
     height: 100px;
+    display: table;
     background-color: yellowgreen;
 
 }
@@ -48,17 +121,29 @@ h3 {
 #skills {
     width: 100%;
     height: 100px;
+    display: table;
     background-color: yellow;
 }
 
+/**********************************
+          Education
+***********************************/
 #education {
     width: 100%;
-    height: 100px;
+    padding-bottom: 20px;
+    display: table;
     background-color: royalblue;
 }
+.uniLogo {
+  width: 100px;
+  height: 70px;
+  margin: 30px 10px 10px 20px;
+}
+
 
 #personalData {
     width: 100%;
     height: 100px;
+    display: table;
     background-color: royalblue;
 }
